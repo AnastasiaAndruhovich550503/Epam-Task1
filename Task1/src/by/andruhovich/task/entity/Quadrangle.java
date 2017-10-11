@@ -66,7 +66,7 @@ public class Quadrangle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return firstPoint.toString() + " " + secondPoint.toString() + " " + thirdPoint.toString() + " " + forthPoint.toString();
     }
 

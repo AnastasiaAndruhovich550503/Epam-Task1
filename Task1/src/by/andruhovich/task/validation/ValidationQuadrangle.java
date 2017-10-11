@@ -5,16 +5,23 @@ import by.andruhovich.task.action.ActionVector;
 import by.andruhovich.task.entity.Point;
 import by.andruhovich.task.entity.Quadrangle;
 import by.andruhovich.task.math.DefineSign;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class ValidationQuadrangle {
 
+    private static final Logger LOGGER = LogManager.getLogger(ValidationQuadrangle.class);
+
     public boolean isQuadrangle(Quadrangle quadrangle) {
-        return (!isPointsLieOnLine(quadrangle.getFirstPoint(), quadrangle.getSecondPoint(), quadrangle.getThirdPoint())) &&
+        boolean result = (!isPointsLieOnLine(quadrangle.getFirstPoint(), quadrangle.getSecondPoint(), quadrangle.getThirdPoint())) &&
                 (!isPointsLieOnLine(quadrangle.getSecondPoint(), quadrangle.getThirdPoint(), quadrangle.getForthPoint())) &&
                 (!isPointsLieOnLine(quadrangle.getThirdPoint(), quadrangle.getForthPoint(), quadrangle.getFirstPoint())) &&
                 (!isPointsLieOnLine(quadrangle.getForthPoint(), quadrangle.getFirstPoint(), quadrangle.getSecondPoint()));
+        LOGGER.printf(Level.INFO, "The shape is quadrangle: " + result);
+        return result;
     }
 
     private boolean isPointsLieOnLine(Point firstPoint, Point secondPoint, Point thirdPoint) {
@@ -28,8 +35,10 @@ public class ValidationQuadrangle {
     public boolean isSquare(Quadrangle quadrangle) {
         ActionQuadrangle actionQuadrangle = new ActionQuadrangle();
         double[] sides = actionQuadrangle.calculateSides(quadrangle);
+        boolean result = sides[0] == sides[1] && sides[2] == sides[3] && sides[0] == sides[2];
 
-        return sides[0] == sides[1] && sides[2] == sides[3] && sides[0] == sides[2];
+        LOGGER.printf(Level.INFO, "The quadrangle is square: " + result);
+        return result;
     }
 
     public boolean isConvex(Quadrangle quadrangle) {
@@ -37,10 +46,13 @@ public class ValidationQuadrangle {
         double[] crossProduct = new double[4];
 
         crossProduct = actionVector.findListVectorCrossProduct(actionVector.findDirectingVectors(quadrangle.getPointList()));
-
-        return DefineSign.defineSign(crossProduct[0]) == DefineSign.defineSign(crossProduct[1]) &&
+        boolean result = DefineSign.defineSign(crossProduct[0]) == DefineSign.defineSign(crossProduct[1]) &&
                 DefineSign.defineSign(crossProduct[2]) == DefineSign.defineSign(crossProduct[3]) &&
                 DefineSign.defineSign(crossProduct[0]) == DefineSign.defineSign(crossProduct[2]);
+
+        LOGGER.printf(Level.INFO, "The quadrangle is convex: " + result);
+
+        return result;
     }
 
 }

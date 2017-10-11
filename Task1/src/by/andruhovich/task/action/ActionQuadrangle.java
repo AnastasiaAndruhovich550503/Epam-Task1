@@ -25,7 +25,7 @@ public class ActionQuadrangle {
 
     public double calculatePerimeter(Quadrangle quadrangle) {
         double[] sides = calculateSides(quadrangle);
-        double perimeter = sides[0] + sides [1] + sides[2] + sides[3];
+        double perimeter = sides[0] + sides[1] + sides[2] + sides[3];
 
         LOGGER.printf(Level.INFO, "The perimeter of quadrangle is " + perimeter);
         return perimeter;

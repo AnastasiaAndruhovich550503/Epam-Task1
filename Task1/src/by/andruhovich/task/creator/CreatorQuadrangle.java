@@ -10,9 +10,9 @@ public class CreatorQuadrangle {
         Point firstPoint = new Point(data[0], data[1]);
         Point secondPoint = new Point(data[2], data[3]);
         Point thirdPoint = new Point(data[4], data[5]);
-        Point forthPoint = new Point(data[6],data[7]);
+        Point forthPoint = new Point(data[6], data[7]);
 
-        Quadrangle quadrangle = new Quadrangle(firstPoint, secondPoint ,thirdPoint, forthPoint);
+        Quadrangle quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
         return quadrangle;
     }
 

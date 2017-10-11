@@ -15,7 +15,7 @@ public class ReadFileData {
     private String defaultFilename = "D:\\учебники\\курсы Java\\лаба 1\\Epam-Task1\\Task1\\data";
     private static final Logger LOGGER = LogManager.getLogger(ReadFileData.class);
 
-    public ArrayList<String> readData(String filename, Locale locale) throws FileNotFoundException{
+    public ArrayList<String> readData(String filename, Locale locale) {
         ArrayList<String> dataList = new ArrayList<>();
         ValidationFileName validationFileName = new ValidationFileName();
         Scanner scanner = null;
@@ -33,12 +33,10 @@ public class ReadFileData {
             while (scanner.hasNext()) {
                 dataList.add(scanner.nextLine());
             }
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             LOGGER.printf(Level.FATAL, "File " + filename + "not found.");
-            throw new FileNotFoundException();
-        }
-        finally {
+            throw new RuntimeException();
+        } finally {
             scanner.close();
         }
         return dataList;
