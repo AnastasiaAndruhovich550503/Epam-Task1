@@ -1,4 +1,4 @@
-package by.bsu.task.exception;
+package by.andruhovich.task.exception;
 
 public class FileNotExistException extends Exception {
     public FileNotExistException(String message) {

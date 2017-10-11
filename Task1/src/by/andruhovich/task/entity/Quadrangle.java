@@ -1,4 +1,6 @@
-package by.bsu.task.entity;
+package by.andruhovich.task.entity;
+
+import java.util.ArrayList;
 
 public class Quadrangle {
     private Point firstPoint;
@@ -50,6 +52,17 @@ public class Quadrangle {
 
     public void setForthPoint(Point forthPoint) {
         this.forthPoint = forthPoint;
+    }
+
+    public ArrayList<Point> getPointList() {
+        ArrayList<Point> pointList = new ArrayList<>();
+
+        pointList.add(firstPoint);
+        pointList.add(secondPoint);
+        pointList.add(thirdPoint);
+        pointList.add(forthPoint);
+
+        return pointList;
     }
 
     @Override

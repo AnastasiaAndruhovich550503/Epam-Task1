@@ -1,8 +1,12 @@
-package by.bsu.task.validation;
+package by.andruhovich.task.validation;
 
-import by.bsu.task.action.ActionQuadrangle;
-import by.bsu.task.entity.Point;
-import by.bsu.task.entity.Quadrangle;
+import by.andruhovich.task.action.ActionQuadrangle;
+import by.andruhovich.task.action.ActionVector;
+import by.andruhovich.task.entity.Point;
+import by.andruhovich.task.entity.Quadrangle;
+import by.andruhovich.task.math.DefineSign;
+
+import java.util.ArrayList;
 
 public class ValidationQuadrangle {
 
@@ -22,15 +26,21 @@ public class ValidationQuadrangle {
     }
 
     public boolean isSquare(Quadrangle quadrangle) {
-        double firstSide = Math.sqrt(Math.pow(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(), 2) +
-                Math.pow(quadrangle.getSecondPoint().getY() - quadrangle.getFirstPoint().getY(), 2));
-        double secondSide = Math.sqrt(Math.pow(quadrangle.getThirdPoint().getX() - quadrangle.getSecondPoint().getX(), 2) +
-                Math.pow(quadrangle.getThirdPoint().getY() - quadrangle.getSecondPoint().getY(), 2));
-        double thirdSide = Math.sqrt(Math.pow(quadrangle.getForthPoint().getX() - quadrangle.getThirdPoint().getX(), 2) +
-                Math.pow(quadrangle.getForthPoint().getY() - quadrangle.getThirdPoint().getY(), 2));
-        double forthSide = Math.sqrt(Math.pow(quadrangle.getFirstPoint().getX() - quadrangle.getForthPoint().getX(), 2) +
-                Math.pow(quadrangle.getFirstPoint().getY() - quadrangle.getForthPoint().getY(), 2));
+        ActionQuadrangle actionQuadrangle = new ActionQuadrangle();
+        double[] sides = actionQuadrangle.calculateSides(quadrangle);
 
-        return firstSide == secondSide && thirdSide == forthSide && firstSide == thirdSide;
+        return sides[0] == sides[1] && sides[2] == sides[3] && sides[0] == sides[2];
     }
+
+    public boolean isConvex(Quadrangle quadrangle) {
+        ActionVector actionVector = new ActionVector();
+        double[] crossProduct = new double[4];
+
+        crossProduct = actionVector.findListVectorCrossProduct(actionVector.findDirectingVectors(quadrangle.getPointList()));
+
+        return DefineSign.defineSign(crossProduct[0]) == DefineSign.defineSign(crossProduct[1]) &&
+                DefineSign.defineSign(crossProduct[2]) == DefineSign.defineSign(crossProduct[3]) &&
+                DefineSign.defineSign(crossProduct[0]) == DefineSign.defineSign(crossProduct[2]);
+    }
+
 }
