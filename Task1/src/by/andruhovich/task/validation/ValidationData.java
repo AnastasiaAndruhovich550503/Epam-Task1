@@ -19,8 +19,4 @@ public class ValidationData {
         }
         return true;
     }
-
-    public boolean isListEmpty(ArrayList<double[]> listData) {
-        return listData.isEmpty();
-    }
 }

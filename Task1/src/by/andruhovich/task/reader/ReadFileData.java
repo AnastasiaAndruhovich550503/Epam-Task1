@@ -1,6 +1,9 @@
 package by.andruhovich.task.reader;
 
 import by.andruhovich.task.validation.ValidationFileName;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,13 +13,18 @@ import java.util.Scanner;
 
 public class ReadFileData {
     private String defaultFilename = "D:\\учебники\\курсы Java\\лаба 1\\Epam-Task1\\Task1\\data";
+    private static final Logger LOGGER = LogManager.getLogger(ReadFileData.class);
 
     public ArrayList<String> readData(String filename, Locale locale) throws FileNotFoundException{
         ArrayList<String> dataList = new ArrayList<>();
         ValidationFileName validationFileName = new ValidationFileName();
         Scanner scanner = null;
 
-        if (!validationFileName.isRightFilename(filename)) filename = defaultFilename;
+        if (!validationFileName.isRightFilename(filename)) {
+            LOGGER.printf(Level.WARN, "File " + filename + " has wrong extension. Filename will be replaced " +
+                    "with default name " + defaultFilename);
+            filename = defaultFilename;
+        }
 
         try {
             scanner = new Scanner(new File(filename));
@@ -27,7 +35,8 @@ public class ReadFileData {
             }
         }
         catch (FileNotFoundException e) {
-            throw new FileNotFoundException("File " + filename + "not found.");
+            LOGGER.printf(Level.FATAL, "File " + filename + "not found.");
+            throw new FileNotFoundException();
         }
         finally {
             scanner.close();

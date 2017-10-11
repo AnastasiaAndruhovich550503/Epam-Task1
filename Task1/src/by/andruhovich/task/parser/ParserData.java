@@ -1,41 +1,54 @@
 package by.andruhovich.task.parser;
 
 import by.andruhovich.task.validation.ValidationData;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class ParserData {
-    ArrayList<double[]> convertListOfStringArrayToListOfDoubleArray(ArrayList<String> data) throws RuntimeException {
+
+    private static final Logger LOGGER = LogManager.getLogger(ParserData.class);
+
+    ArrayList<double[]> convertListOfStringArrayToListOfDoubleArray(ArrayList<String> dataList) throws NullPointerException {
         ArrayList<double[]> result = new ArrayList<>();
         ValidationData validationData = new ValidationData();
         int numberOfUnfixedString = -1;
         StringBuffer temp = new StringBuffer();
         String[] parseData = null;
 
-        for (int i = 0; i < data.size(); i++) {
-            parseData = parseString(data.get(i), " ");
-            if (validationData.isRightString(data.get(i)) && parseData.length >= 8) {
+        for (int i = 0; i < dataList.size(); i++) {
+            parseData = parseString(dataList.get(i), " ");
+            if (validationData.isRightString(dataList.get(i)) && parseData.length >= 8) {
                 result.add(convertStringArrayToDoubleArray(parseData));
             }
             else {
                 if (parseData.length < 8) {
-
+                    LOGGER.printf(Level.WARN, "Not enough arguments in line number " + i);
                 }
                 else if (numberOfUnfixedString != i) {
                     numberOfUnfixedString = i;
-                    temp.append(deleteUncorrectSymbols(data.get(i)));
-                    data.remove(i);
-                    data.add(i, temp.toString());
+                    temp.append(deleteUnCorrectSymbols(dataList.get(i)));
+                    dataList.remove(i);
+                    dataList.add(i, temp.toString());
                     i --;
+                    LOGGER.printf(Level.INFO, "Attempt to correct the line number " + i);
+                }
+                else {
+                    LOGGER.printf(Level.WARN, "Attempt to correct the line number " + i + "wasn't succeeded");
                 }
             }
         }
-        if (validationData.isListEmpty(result)) throw new RuntimeException();
+        if (result.isEmpty()) {
+            LOGGER.printf(Level.FATAL, "There are no correct lines in file");
+            throw new NullPointerException();
+        }
 
         return result;
     }
 
-    private String deleteUncorrectSymbols(String data) {
+    private String deleteUnCorrectSymbols(String data) {
         return data.replaceAll("[^\\d.]", "");
     }
 

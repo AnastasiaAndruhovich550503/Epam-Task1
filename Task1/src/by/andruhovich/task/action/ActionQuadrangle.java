@@ -1,11 +1,14 @@
 package by.andruhovich.task.action;
 
-import by.andruhovich.task.entity.Point;
 import by.andruhovich.task.entity.Quadrangle;
-
-import java.util.ArrayList;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ActionQuadrangle {
+
+    private static final Logger LOGGER = LogManager.getLogger(ActionQuadrangle.class);
+
     public double[] calculateSides(Quadrangle quadrangle) {
         double[] sides = new double[4];
         sides[0] = Math.sqrt(Math.pow(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(), 2) +
@@ -22,15 +25,20 @@ public class ActionQuadrangle {
 
     public double calculatePerimeter(Quadrangle quadrangle) {
         double[] sides = calculateSides(quadrangle);
-        return  sides[0] + sides [1] + sides[2] + sides[3];
+        double perimeter = sides[0] + sides [1] + sides[2] + sides[3];
+
+        LOGGER.printf(Level.INFO, "The perimeter of quadrangle is " + perimeter);
+        return perimeter;
     }
 
     public double calculateSquare(Quadrangle quadrangle) {
         double[] sides = calculateSides(quadrangle);
         double halfPerimeter = calculatePerimeter(quadrangle) / 2;
-
-        return Math.sqrt((halfPerimeter - sides[0]) * (halfPerimeter - sides[1]) *
+        double square = Math.sqrt((halfPerimeter - sides[0]) * (halfPerimeter - sides[1]) *
                 (halfPerimeter - sides[2]) * (halfPerimeter - sides[3]));
+
+        LOGGER.printf(Level.INFO, "The square of quadrangle is " + square);
+        return square;
 
     }
 }

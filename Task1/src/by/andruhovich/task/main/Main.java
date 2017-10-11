@@ -1,5 +1,7 @@
 package by.andruhovich.task.main;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,6 +12,5 @@ public class Main {
 
         Quadrangle quadrangle = new Quadrangle(firstPoint, secondPoint ,thirdPoint, forthPoint);
         System.out.println(new ValidationQuadrangle().isQuadrangle(quadrangle));*/
-        //System.out.println(Double.NaN);
     }
 }
