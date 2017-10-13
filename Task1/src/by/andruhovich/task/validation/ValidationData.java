@@ -9,18 +9,22 @@ import java.util.ArrayList;
 
 public class ValidationData {
 
-    private static final Logger LOGGER = LogManager.getLogger(ValidationData.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public boolean isRightString(String data) {
-        if (data.isEmpty()) return false;
+        if (data.isEmpty()) {
+            return false;
+        }
 
-        String[] parseData = ParserData.parseString(data, " ");
+        ParserData parserData = new ParserData();
+
+        ArrayList<String> parseData = parserData.parseString(data, " ");
         try {
-            for (int i = 0; i < parseData.length; i++) {
-                Double.parseDouble(parseData[i]);
+            for (int i = 0; i < parseData.size(); i++) {
+                Double.parseDouble(parseData.get(i));
             }
         } catch (NumberFormatException e) {
-            LOGGER.printf(Level.WARN, "Found wrong string " + data);
+            LOGGER.printf(Level.ERROR, "Found wrong string " + data);
             return false;
         }
         return true;

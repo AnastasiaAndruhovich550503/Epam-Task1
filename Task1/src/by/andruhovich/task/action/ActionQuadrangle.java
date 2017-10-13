@@ -7,23 +7,31 @@ import org.apache.logging.log4j.Logger;
 
 public class ActionQuadrangle {
 
-    private static final Logger LOGGER = LogManager.getLogger(ActionQuadrangle.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public double[] calculateSides(Quadrangle quadrangle) {
+        if (quadrangle == null) {
+            throw new IllegalArgumentException();
+        }
+
         double[] sides = new double[4];
-        sides[0] = Math.sqrt(Math.pow(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(), 2) +
-                Math.pow(quadrangle.getSecondPoint().getY() - quadrangle.getFirstPoint().getY(), 2));
-        sides[1] = Math.sqrt(Math.pow(quadrangle.getThirdPoint().getX() - quadrangle.getSecondPoint().getX(), 2) +
-                Math.pow(quadrangle.getThirdPoint().getY() - quadrangle.getSecondPoint().getY(), 2));
-        sides[2] = Math.sqrt(Math.pow(quadrangle.getForthPoint().getX() - quadrangle.getThirdPoint().getX(), 2) +
-                Math.pow(quadrangle.getForthPoint().getY() - quadrangle.getThirdPoint().getY(), 2));
-        sides[3] = Math.sqrt(Math.pow(quadrangle.getFirstPoint().getX() - quadrangle.getForthPoint().getX(), 2) +
-                Math.pow(quadrangle.getFirstPoint().getY() - quadrangle.getForthPoint().getY(), 2));
+        sides[0] = Math.hypot(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(),
+                quadrangle.getSecondPoint().getY() - quadrangle.getFirstPoint().getY());
+        sides[1] = Math.hypot(quadrangle.getThirdPoint().getX() - quadrangle.getSecondPoint().getX(),
+                quadrangle.getThirdPoint().getY() - quadrangle.getSecondPoint().getY());
+        sides[2] = Math.hypot(quadrangle.getForthPoint().getX() - quadrangle.getThirdPoint().getX(),
+                quadrangle.getForthPoint().getY() - quadrangle.getThirdPoint().getY());
+        sides[3] = Math.hypot(quadrangle.getFirstPoint().getX() - quadrangle.getForthPoint().getX(),
+                quadrangle.getFirstPoint().getY() - quadrangle.getForthPoint().getY());
 
         return sides;
     }
 
     public double calculatePerimeter(Quadrangle quadrangle) {
+        if (quadrangle == null) {
+            throw new IllegalArgumentException();
+        }
+
         double[] sides = calculateSides(quadrangle);
         double perimeter = sides[0] + sides[1] + sides[2] + sides[3];
 
@@ -32,6 +40,10 @@ public class ActionQuadrangle {
     }
 
     public double calculateSquare(Quadrangle quadrangle) {
+        if (quadrangle == null) {
+            throw new IllegalArgumentException();
+        }
+
         double[] sides = calculateSides(quadrangle);
         double halfPerimeter = calculatePerimeter(quadrangle) / 2;
         double square = Math.sqrt((halfPerimeter - sides[0]) * (halfPerimeter - sides[1]) *

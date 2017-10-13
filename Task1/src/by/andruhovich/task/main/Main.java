@@ -1,5 +1,7 @@
 package by.andruhovich.task.main;
 
+import by.andruhovich.task.creator.CreatorQuadrangle;
+
 import java.util.ArrayList;
 
 public class Main {

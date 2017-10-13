@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class ValidationQuadrangle {
 
-    private static final Logger LOGGER = LogManager.getLogger(ValidationQuadrangle.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public boolean isQuadrangle(Quadrangle quadrangle) {
         boolean result = (!isPointsLieOnLine(quadrangle.getFirstPoint(), quadrangle.getSecondPoint(), quadrangle.getThirdPoint())) &&

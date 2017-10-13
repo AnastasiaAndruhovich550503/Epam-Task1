@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ValidationFileName {
-    private static final Logger LOGGER = LogManager.getLogger(ValidationFileName.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public boolean isRightFilename(String filename) {
         String extension = new String();
@@ -13,7 +13,7 @@ public class ValidationFileName {
             extension = filename.substring(filename.length() - 5, filename.length());
         }
         catch (IndexOutOfBoundsException e) {
-            LOGGER.printf(Level.WARN, "Filename " + filename + " has no extension");
+            LOGGER.printf(Level.ERROR, "Filename " + filename + " has no extension");
             return false;
         }
         return extension.compareTo(".txt") == 0;

@@ -7,13 +7,15 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ReadFileData {
     private String defaultFilename = "D:\\учебники\\курсы Java\\лаба 1\\Epam-Task1\\Task1\\data";
-    private static final Logger LOGGER = LogManager.getLogger(ReadFileData.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public ArrayList<String> readData(String filename, Locale locale) {
         ArrayList<String> dataList = new ArrayList<>();
@@ -36,7 +38,10 @@ public class ReadFileData {
         } catch (FileNotFoundException e) {
             LOGGER.printf(Level.FATAL, "File " + filename + "not found.");
             throw new RuntimeException();
-        } finally {
+        } catch (NoSuchElementException e) {
+            LOGGER.printf(Level.FATAL, "File " + filename + "is empty.");
+            throw new RuntimeException();
+        }finally {
             scanner.close();
         }
         return dataList;
