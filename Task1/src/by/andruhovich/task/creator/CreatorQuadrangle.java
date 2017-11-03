@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class CreatorQuadrangle {
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger(CreatorQuadrangle.class);
 
     public Quadrangle createQuadrangle(double[] data) throws DataIsEmptyTechnicalException{
         if (data.length == 0) {
@@ -38,7 +38,7 @@ public class CreatorQuadrangle {
             try {
                 listQuadrangle.add(createQuadrangle(listData.get(i)));
             } catch (DataIsEmptyTechnicalException e) {
-                LOGGER.printf(Level.WARN, e.getMessage() + i + " in list");
+                LOGGER.log(Level.WARN, e.getMessage() + i + " in list");
             }
         }
 

@@ -1,29 +1,27 @@
 package by.andruhovich.task.reader;
 
-import by.andruhovich.task.validation.ValidationFileName;
+import by.andruhovich.task.validator.ValidatorFileName;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ReadFileData {
-    private String defaultFilename = "D:\\учебники\\курсы Java\\лаба 1\\Epam-Task1\\Task1\\data";
-    private static final Logger LOGGER = LogManager.getLogger();
+    private String defaultFilename = "data.txt";
+    private static final Logger LOGGER = LogManager.getLogger(ReadFileData.class);
 
     public ArrayList<String> readData(String filename, Locale locale) {
         ArrayList<String> dataList = new ArrayList<>();
-        ValidationFileName validationFileName = new ValidationFileName();
+        ValidatorFileName validatorFileName = new ValidatorFileName();
         Scanner scanner = null;
 
-        if (!validationFileName.isRightFilename(filename)) {
-            LOGGER.printf(Level.WARN, "File " + filename + " has wrong extension. Filename will be replaced " +
+        if (!validatorFileName.isRightFilename(filename)) {
+            LOGGER.log(Level.WARN, "File " + filename + " has wrong extension. Filename will be replaced " +
                     "with default name " + defaultFilename);
             filename = defaultFilename;
         }
@@ -36,15 +34,16 @@ public class ReadFileData {
                 dataList.add(scanner.nextLine());
             }
         } catch (FileNotFoundException e) {
-            LOGGER.printf(Level.FATAL, "File " + filename + "not found.");
+            LOGGER.log(Level.FATAL, "File " + filename + "not found.");
             throw new RuntimeException();
-        } catch (NoSuchElementException e) {
-            LOGGER.printf(Level.FATAL, "File " + filename + "is empty.");
-            throw new RuntimeException();
-        }finally {
+        } finally {
             scanner.close();
+        }
+
+        if (dataList.isEmpty()) {
+            LOGGER.log(Level.FATAL, "File " + filename + "is empty.");
+            throw new RuntimeException();
         }
         return dataList;
     }
-
 }
