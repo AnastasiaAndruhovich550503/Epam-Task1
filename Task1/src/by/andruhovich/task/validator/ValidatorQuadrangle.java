@@ -5,6 +5,7 @@ import by.andruhovich.task.math.VectorOperation;
 import by.andruhovich.task.entity.Point;
 import by.andruhovich.task.entity.Quadrangle;
 import by.andruhovich.task.math.DefineSign;
+import by.andruhovich.task.validator.point.ValidatorPoint;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,25 +19,15 @@ public class ValidatorQuadrangle {
             throw new IllegalArgumentException();
         }
 
-        boolean current = (isPointsLieOnLine(quadrangle.getFirstPoint(), quadrangle.getSecondPoint(), quadrangle.getThirdPoint())) ||
-                (isPointsLieOnLine(quadrangle.getSecondPoint(), quadrangle.getThirdPoint(), quadrangle.getForthPoint())) ||
-                (isPointsLieOnLine(quadrangle.getThirdPoint(), quadrangle.getForthPoint(), quadrangle.getFirstPoint())) ||
-                (isPointsLieOnLine(quadrangle.getForthPoint(), quadrangle.getFirstPoint(), quadrangle.getSecondPoint()));
+        ValidatorPoint validatorPoint = new ValidatorPoint();
+
+        boolean current = (validatorPoint.isPointsLieOnLine(quadrangle.getFirstPoint(), quadrangle.getSecondPoint(), quadrangle.getThirdPoint())) ||
+                (validatorPoint.isPointsLieOnLine(quadrangle.getSecondPoint(), quadrangle.getThirdPoint(), quadrangle.getForthPoint())) ||
+                (validatorPoint.isPointsLieOnLine(quadrangle.getThirdPoint(), quadrangle.getForthPoint(), quadrangle.getFirstPoint())) ||
+                (validatorPoint.isPointsLieOnLine(quadrangle.getForthPoint(), quadrangle.getFirstPoint(), quadrangle.getSecondPoint()));
         boolean result = current ? false : true;
         LOGGER.log(Level.INFO, "The shape is quadrangle: " + result);
         return result;
-    }
-
-    public boolean isPointsLieOnLine(Point firstPoint, Point secondPoint, Point thirdPoint) {
-        if (firstPoint == null || secondPoint == null || thirdPoint == null) {
-            throw  new IllegalArgumentException();
-        }
-
-        double accuracy = 1e-5; // точность
-        //(x_3 - x_1) / (x_2 - x_1) - (y_3 - y_1) / (y_2 - y_1)
-        double result = (thirdPoint.getX() - firstPoint.getX()) / (secondPoint.getX() - firstPoint.getX()) -
-                (thirdPoint.getY() - firstPoint.getY()) / (secondPoint.getY() - firstPoint.getY());
-        return Math.abs(result) <= accuracy || Double.isNaN(result);
     }
 
     public boolean isSquare(Quadrangle quadrangle) {
