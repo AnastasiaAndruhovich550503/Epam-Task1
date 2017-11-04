@@ -3,6 +3,7 @@ package by.andruhovich.test;
 import by.andruhovich.task.entity.Point;
 import by.andruhovich.task.entity.Quadrangle;
 import by.andruhovich.task.validator.ValidatorQuadrangle;
+import by.andruhovich.task.validator.point.ValidatorPoint;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -14,9 +15,11 @@ public class ValidatorQuadrangleTest {
     private Quadrangle quadrangle;
 
     private ValidatorQuadrangle validatorQuadrangle;
+    private ValidatorPoint validatorPoint;
 
     @BeforeSuite
     public void fieldsInitialization() {
+        validatorPoint = new ValidatorPoint();
         validatorQuadrangle = new ValidatorQuadrangle();
     }
 
@@ -52,7 +55,7 @@ public class ValidatorQuadrangleTest {
 
     @Test(groups = "Test1")
     public void firstTestIsPointsLieOnLine() {
-        Assert.assertFalse(validatorQuadrangle.isPointsLieOnLine(secondPoint, thirdPoint, forthPoint));
+        Assert.assertFalse(validatorPoint.isPointsLieOnLine(secondPoint, thirdPoint, forthPoint));
     }
 
     @Test(groups = "Test1")
@@ -87,7 +90,7 @@ public class ValidatorQuadrangleTest {
 
     @Test (expectedExceptions = IllegalArgumentException.class)
     public void negativeTestIsPointLieOnLine() {
-        validatorQuadrangle.isPointsLieOnLine(null, null, null);
+        validatorPoint.isPointsLieOnLine(null, null, null);
     }
 
     @Test (expectedExceptions = IllegalArgumentException.class)
