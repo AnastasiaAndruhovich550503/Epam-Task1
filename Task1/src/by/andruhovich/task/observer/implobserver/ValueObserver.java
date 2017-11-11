@@ -27,4 +27,8 @@ public class ValueObserver implements Observer {
 
         valueHashMap.addValue(id, value);
     }
+
+    public double[] getValue(long id) {
+        return valueHashMap.getValue(id);
+    }
 }

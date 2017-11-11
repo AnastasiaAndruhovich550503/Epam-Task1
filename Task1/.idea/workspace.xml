@@ -12,24 +12,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ValueObserver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobserver/ValueObserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="230">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidatorQuadrangleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ValidatorQuadrangleTest.java">
+      <file leaf-file-name="ObserverTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ObserverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="903">
+              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2229#2230#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,37 +70,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataTest.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataTest.txt">
+      <file leaf-file-name="ValidatorDataTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ValidatorDataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="493">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterDataTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/FilterDataTest.java">
+      <file leaf-file-name="QuadrangleObservable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobesrvable/QuadrangleObservable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="387">
+              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefineSignTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/DefineSignTest.java">
+      <file leaf-file-name="ValueHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/singleton/ValueHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="e#733#734#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionQuadrangle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActionQuadrangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/action/ActionQuadrangle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -86,31 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorOperation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/math/VectorOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VectorOperationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/VectorOperationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="74" column="125" lean-forward="false" selection-start-line="74" selection-start-column="125" selection-end-line="74" selection-end-column="125" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActionQuadrangleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ActionQuadrangleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="94" column="108" lean-forward="false" selection-start-line="94" selection-start-column="108" selection-end-line="94" selection-end-column="108" />
+            <state relative-caret-position="375">
+              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -142,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/by/andruhovich/test/DefineSignTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/ValidationDataTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/ParserDataTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/parser/Filter.java" />
@@ -183,16 +195,17 @@
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/creator/CreatorValuesHashMap.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/singleton/ValueHashMap.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/implObserver/ValueObserver.java" />
-        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/implobserver/ValueObserver.java" />
-        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/singleton/QuadrangleArrayList.java" />
-        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/implobesrvable/QuadrangleObservable.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/ValidatorQuadrangleTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/math/VectorOperation.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/VectorOperationTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/ReadFileDataTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/test/ActionQuadrangleTest.java" />
         <option value="$PROJECT_DIR$/src/by/andruhovich/task/action/ActionQuadrangle.java" />
+        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/implobserver/ValueObserver.java" />
+        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/Observer.java" />
+        <option value="$PROJECT_DIR$/src/by/andruhovich/task/observer/implobesrvable/QuadrangleObservable.java" />
+        <option value="$PROJECT_DIR$/src/by/andruhovich/test/ObserverTest.java" />
       </list>
     </option>
   </component>
@@ -202,7 +215,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="684" />
     <option name="y" value="411" />
     <option name="width" value="1382" />
@@ -407,11 +420,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.by.andruhovich.test">
-    <configuration name="ActionQuadrangleTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ObserverTest.firstTestNegativeValue">
+    <configuration name="ObserverTest.firstTestComparePerimeter" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.andruhovich.test.ValidatorDataTest" />
+          <option name="PATTERN" value="by.andruhovich.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -420,10 +433,74 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="by.andruhovich.test" />
-      <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ActionQuadrangleTest" />
-      <option name="METHOD_NAME" />
+      <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ObserverTest" />
+      <option name="METHOD_NAME" value="firstTestComparePerimeter" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ObserverTest.firstTestCompareSquare" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.andruhovich.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Task1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.andruhovich.test" />
+      <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ObserverTest" />
+      <option name="METHOD_NAME" value="firstTestCompareSquare" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ObserverTest.firstTestNegativeValue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.andruhovich.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Task1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.andruhovich.test" />
+      <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ObserverTest" />
+      <option name="METHOD_NAME" value="firstTestNegativeValue" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -485,38 +562,6 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="by.andruhovich.test" />
       <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ReadFileDataTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="ValidatorDataTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="by.andruhovich.test.ValidatorDataTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Task1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.andruhovich.test" />
-      <option name="MAIN_CLASS_NAME" value="by.andruhovich.test.ValidatorDataTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -649,18 +694,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.ValidatorDataTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.by.andruhovich.test" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.ActionQuadrangleTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ReadFileDataTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.by.andruhovich.test" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ReadFileDataTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestComparePerimeter" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestCompareSquare" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestNegativeValue" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.by.andruhovich.test" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ReadFileDataTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ActionQuadrangleTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.ValidatorDataTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestNegativeValue" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestCompareSquare" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ObserverTest.firstTestComparePerimeter" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.by.andruhovich.test" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ReadFileDataTest" />
       </list>
     </recent_temporary>
   </component>
@@ -689,60 +736,68 @@
       <workItem from="1510163189117" duration="2737000" />
       <workItem from="1510218010869" duration="308000" />
       <workItem from="1510392768748" duration="4625000" />
-      <workItem from="1510436381946" duration="1243000" />
+      <workItem from="1510436381946" duration="4047000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="by_andruhovich_test - 2017.11.04 at 11h 48m 46s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestCompareSquare - 2017.11.12 at 01h 23m 12s.xml">
+      <configuration name="ObserverTest.firstTestCompareSquare" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.07 at 15h 24m 21s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 28m 23s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.11 at 13h 36m 40s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 29m 46s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.11 at 19h 45m 50s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 31m 44s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 00h 52m 59s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 36m 08s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 00h 53m 20s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 43m 08s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 00h 53m 37s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 43m 45s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 00h 54m 50s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 45m 01s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 00h 59m 47s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 45m 58s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="by_andruhovich_test - 2017.11.12 at 01h 00m 22s.xml">
-      <configuration name="by.andruhovich.test" configurationId="TestNG" />
+    <history-entry file="ObserverTest_firstTestNegativeValue - 2017.11.12 at 01h 46m 35s.xml">
+      <configuration name="ObserverTest.firstTestNegativeValue" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120090000" />
+    <option name="totallyTimeSpent" value="122894000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24687934" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20943135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31206658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24856733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -774,13 +829,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/action/ActionQuadrangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/validator/ValidatorQuadrangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -835,13 +883,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/data.txt" />
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ValidatorDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/entity/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -941,40 +982,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/creator/CreatorQuadrangleArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/creator/CreatorValuesHashMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/singleton/ValueHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/singleton/QuadrangleArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -987,26 +994,6 @@
             <element signature="e#1113#1114#0" expanded="true" />
             <element signature="e#1138#1139#0" expanded="true" />
             <element signature="e#1190#1191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobesrvable/QuadrangleObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobserver/ValueObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,14 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ReadFileDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataTest.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1075,20 +1054,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ActionQuadrangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="94" column="108" lean-forward="false" selection-start-line="94" selection-start-column="108" selection-end-line="94" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/action/ActionQuadrangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ReadFileDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ValidatorDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/singleton/ValueHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#733#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ActionQuadrangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobserver/ValueObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/task/observer/implobesrvable/QuadrangleObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/andruhovich/test/ObserverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
