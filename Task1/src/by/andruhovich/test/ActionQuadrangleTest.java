@@ -36,7 +36,7 @@ public class ActionQuadrangleTest {
         thirdPoint = new Point(3, 2);
         forthPoint = new Point(4, 1);
 
-        quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
+        quadrangle = new Quadrangle(0, firstPoint, secondPoint, thirdPoint, forthPoint);
 
         expectedQuadrangleSides[0] = 1.414213562;
         expectedQuadrangleSides[1] = 1;
@@ -54,7 +54,7 @@ public class ActionQuadrangleTest {
         thirdPoint = new Point(2.5, 1.6);
         forthPoint = new Point(3.6, 1);
 
-        quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
+        quadrangle = new Quadrangle(0, firstPoint, secondPoint, thirdPoint, forthPoint);
 
         expectedQuadrangleSides[0] = 2;
         expectedQuadrangleSides[1] = 1.720465053;

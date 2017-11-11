@@ -47,7 +47,7 @@ public class FilterData {
             throw new IllegalArgumentException();
         }
         if (dataQuantity <= 0) {
-            throw new IllegalDataQuantityTechnicalException("Quantity of data cannot be <=0 ", dataQuantity);
+            throw new IllegalDataQuantityTechnicalException("Quantity of data cannot be <=0 ");
         }
 
         ArrayList<String> parseData;

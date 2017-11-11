@@ -3,12 +3,14 @@ package by.andruhovich.task.entity;
 import java.util.ArrayList;
 
 public class Quadrangle {
+    private long id;
     private Point firstPoint;
     private Point secondPoint;
     private Point thirdPoint;
     private Point forthPoint;
 
-    public Quadrangle(Point firstPoint, Point secondPoint, Point thirdPoint, Point forthPoint) {
+    public Quadrangle(long id, Point firstPoint, Point secondPoint, Point thirdPoint, Point forthPoint) {
+        this.id = id;
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
         this.thirdPoint = thirdPoint;
@@ -16,10 +18,15 @@ public class Quadrangle {
     }
 
     public Quadrangle(Quadrangle quadrangle) {
+        this.id = quadrangle.getId();
         this.firstPoint = quadrangle.getFirstPoint();
         this.secondPoint = quadrangle.getSecondPoint();
         this.thirdPoint = quadrangle.getThirdPoint();
         this.forthPoint = quadrangle.getForthPoint();
+    }
+
+    public long getId() {
+        return id;
     }
 
     public Point getFirstPoint() {
@@ -36,6 +43,10 @@ public class Quadrangle {
 
     public Point getForthPoint() {
         return forthPoint;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public void setFirstPoint(Point firstPoint) {
@@ -67,7 +78,13 @@ public class Quadrangle {
 
     @Override
     public String toString() {
-        return firstPoint.toString() + " " + secondPoint.toString() + " " + thirdPoint.toString() + " " + forthPoint.toString();
+        return "Quadrangle{" +
+                "id=" + id +
+                ", firstPoint=" + firstPoint +
+                ", secondPoint=" + secondPoint +
+                ", thirdPoint=" + thirdPoint +
+                ", forthPoint=" + forthPoint +
+                '}';
     }
 
     @Override
@@ -77,22 +94,20 @@ public class Quadrangle {
 
         Quadrangle that = (Quadrangle) o;
 
-        if (getFirstPoint() != null ? !getFirstPoint().equals(that.getFirstPoint()) : that.getFirstPoint() != null)
-            return false;
-        if (getSecondPoint() != null ? !getSecondPoint().equals(that.getSecondPoint()) : that.getSecondPoint() != null)
-            return false;
-        if (getThirdPoint() != null ? !getThirdPoint().equals(that.getThirdPoint()) : that.getThirdPoint() != null)
-            return false;
-        return getForthPoint() != null ? getForthPoint().equals(that.getForthPoint()) : that.getForthPoint() == null;
+        if (getId() != that.getId()) return false;
+        if (!getFirstPoint().equals(that.getFirstPoint())) return false;
+        if (!getSecondPoint().equals(that.getSecondPoint())) return false;
+        if (!getThirdPoint().equals(that.getThirdPoint())) return false;
+        return getForthPoint().equals(that.getForthPoint());
     }
 
     @Override
     public int hashCode() {
-        int result = getFirstPoint() != null ? getFirstPoint().hashCode() : 0;
-        result = 31 * result + (getSecondPoint() != null ? getSecondPoint().hashCode() : 0);
-        result = 31 * result + (getThirdPoint() != null ? getThirdPoint().hashCode() : 0);
-        result = 31 * result + (getForthPoint() != null ? getForthPoint().hashCode() : 0);
+        int result = (int) (getId() ^ (getId() >>> 32));
+        result = 31 * result + getFirstPoint().hashCode();
+        result = 31 * result + getSecondPoint().hashCode();
+        result = 31 * result + getThirdPoint().hashCode();
+        result = 31 * result + getForthPoint().hashCode();
         return result;
     }
-
 }

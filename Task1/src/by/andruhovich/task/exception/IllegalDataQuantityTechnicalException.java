@@ -1,25 +1,19 @@
 package by.andruhovich.task.exception;
 
-public class IllegalDataQuantityTechnicalException extends Exception{
-    private int number;
-
-    public IllegalDataQuantityTechnicalException(String message, int number) {
+public class IllegalDataQuantityTechnicalException extends Exception {
+    public IllegalDataQuantityTechnicalException(String message) {
         super(message);
-        this.number = number;
     }
 
-    public IllegalDataQuantityTechnicalException(String message, Throwable cause, int number) {
+    public IllegalDataQuantityTechnicalException(String message, Throwable cause) {
         super(message, cause);
-        this.number = number;
     }
 
-    public IllegalDataQuantityTechnicalException(Throwable cause, int number) {
+    public IllegalDataQuantityTechnicalException(Throwable cause) {
         super(cause);
-        this.number = number;
     }
 
-    public IllegalDataQuantityTechnicalException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace, int number) {
+    public IllegalDataQuantityTechnicalException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
-        this.number = number;
     }
 }

@@ -30,7 +30,7 @@ public class ValidatorQuadrangleTest {
         thirdPoint = new Point(3, 3);
         forthPoint = new Point(2.5, 6);
 
-        quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
+        quadrangle = new Quadrangle(0, firstPoint, secondPoint, thirdPoint, forthPoint);
     }
 
     @BeforeGroups("Test2")
@@ -40,7 +40,7 @@ public class ValidatorQuadrangleTest {
         thirdPoint = new Point(2.5, 1.6);
         forthPoint = new Point(3.6, 1);
 
-        quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
+        quadrangle = new Quadrangle(0, firstPoint, secondPoint, thirdPoint, forthPoint);
     }
 
     @BeforeGroups("Test3")
@@ -50,7 +50,7 @@ public class ValidatorQuadrangleTest {
         thirdPoint = new Point(4.5, 3);
         forthPoint = new Point(4.5, 1);
 
-        quadrangle = new Quadrangle(firstPoint, secondPoint, thirdPoint, forthPoint);
+        quadrangle = new Quadrangle(0, firstPoint, secondPoint, thirdPoint, forthPoint);
     }
 
     @Test(groups = "Test1")
