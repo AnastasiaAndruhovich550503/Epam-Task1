@@ -5,9 +5,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class ActionQuadrangle {
 
     private static final Logger LOGGER = LogManager.getLogger(ActionQuadrangle.class);
@@ -18,18 +15,14 @@ public class ActionQuadrangle {
         }
 
         double[] sides = new double[4];
-        sides[0] = new BigDecimal(Math.hypot(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(),
-                quadrangle.getSecondPoint().getY() - quadrangle.getFirstPoint().getY())).setScale(9,
-                RoundingMode.DOWN).doubleValue();
-        sides[1] = new BigDecimal(Math.hypot(quadrangle.getThirdPoint().getX() - quadrangle.getSecondPoint().getX(),
-                quadrangle.getThirdPoint().getY() - quadrangle.getSecondPoint().getY())).setScale(9,
-                RoundingMode.DOWN).doubleValue();
-        sides[2] = new BigDecimal(Math.hypot(quadrangle.getForthPoint().getX() - quadrangle.getThirdPoint().getX(),
-                quadrangle.getForthPoint().getY() - quadrangle.getThirdPoint().getY())).setScale(9,
-                RoundingMode.DOWN).doubleValue();
-        sides[3] = new BigDecimal(Math.hypot(quadrangle.getFirstPoint().getX() - quadrangle.getForthPoint().getX(),
-                quadrangle.getFirstPoint().getY() - quadrangle.getForthPoint().getY())).setScale(9,
-                RoundingMode.DOWN).doubleValue();
+        sides[0] = Math.hypot(quadrangle.getSecondPoint().getX() - quadrangle.getFirstPoint().getX(),
+                quadrangle.getSecondPoint().getY() - quadrangle.getFirstPoint().getY());
+        sides[1] = Math.hypot(quadrangle.getThirdPoint().getX() - quadrangle.getSecondPoint().getX(),
+                quadrangle.getThirdPoint().getY() - quadrangle.getSecondPoint().getY());
+        sides[2] = Math.hypot(quadrangle.getForthPoint().getX() - quadrangle.getThirdPoint().getX(),
+                quadrangle.getForthPoint().getY() - quadrangle.getThirdPoint().getY());
+        sides[3] = Math.hypot(quadrangle.getFirstPoint().getX() - quadrangle.getForthPoint().getX(),
+                quadrangle.getFirstPoint().getY() - quadrangle.getForthPoint().getY());
 
         return sides;
     }
@@ -40,8 +33,7 @@ public class ActionQuadrangle {
         }
 
         double[] sides = calculateSides(quadrangle);
-        double perimeter =  new BigDecimal(sides[0] + sides[1] + sides[2] + sides[3]).setScale(8,
-                RoundingMode.DOWN).doubleValue();
+        double perimeter =  sides[0] + sides[1] + sides[2] + sides[3];
 
         LOGGER.log(Level.INFO, "The perimeter of quadrangle is " + perimeter);
         return perimeter;
@@ -53,15 +45,14 @@ public class ActionQuadrangle {
         }
 
         //S = 0.5 * |(x1 - x2)(y1 + y2) + (x2 - x3)*(y2 + y3) + (x3 - x4)(y3 + y4) + (x4 - x1)(y4 + y1)|
-        double square = new BigDecimal(0.5 * Math.abs((quadrangle.getFirstPoint().getX() - quadrangle.getSecondPoint().getX()) *
+        double square = 0.5 * Math.abs((quadrangle.getFirstPoint().getX() - quadrangle.getSecondPoint().getX()) *
                 (quadrangle.getFirstPoint().getY() + quadrangle.getSecondPoint().getY()) +
                         (quadrangle.getSecondPoint().getX() - quadrangle.getThirdPoint().getX()) *
                 (quadrangle.getSecondPoint().getY() + quadrangle.getThirdPoint().getY()) +
                         (quadrangle.getThirdPoint().getX() - quadrangle.getForthPoint().getX()) *
                 (quadrangle.getThirdPoint().getY() + quadrangle.getForthPoint().getY()) +
                         (quadrangle.getForthPoint().getX() - quadrangle.getFirstPoint().getX()) *
-                (quadrangle.getForthPoint().getY() + quadrangle.getFirstPoint().getY()))).setScale(8,
-                RoundingMode.DOWN).doubleValue();
+                (quadrangle.getForthPoint().getY() + quadrangle.getFirstPoint().getY()));
 
         LOGGER.log(Level.INFO, "The square of quadrangle is " + square);
         return square;

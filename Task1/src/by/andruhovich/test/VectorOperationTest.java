@@ -57,37 +57,37 @@ public class VectorOperationTest {
 
     @Test(groups = "Vector")
     public void firstTestCalculateDirectionVector(){
-        Assert.assertEquals(vectorOperation.calculateListDirectingVector(firstPoint, secondPoint), firstDirectingVector);
+        Assert.assertEquals(vectorOperation.calculateListDirectingVector(firstPoint, secondPoint)[0], firstDirectingVector[0], 0.000001);
     }
 
     @Test(groups = "Vector")
     public void secondTestCalculateDirectingVector() {
-        Assert.assertEquals(vectorOperation.calculateListDirectingVector(secondPoint, firstPoint), secondDirectingVector);
+        Assert.assertEquals(vectorOperation.calculateListDirectingVector(secondPoint, firstPoint)[1], secondDirectingVector[1], 0.00001);
     }
 
     @Test(groups = "Vector")
     public void firstTestCalculateDirectingVectorsFirstPosition() {
-        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(0), vectorList.get(0));
+        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(0)[0], vectorList.get(0)[0], 0.000001);
     }
 
     @Test(groups = "Vector")
     public void firstTestCalculateDirectingVectorsSecondPosition() {
-        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(1), vectorList.get(1));
+        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(1)[1], vectorList.get(1)[1], 0.000001);
     }
 
     @Test(groups = "Vector")
     public void firstTestCalculateDirectingVectorsThirdPosition() {
-        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(2), vectorList.get(2));
+        Assert.assertEquals(vectorOperation.calculateListDirectingVector(pointList).get(2)[0], vectorList.get(2)[0], 0.000001);
     }
 
     @Test(groups = "CrossProduct")
     public void firstTestCalculateVectorCrossProduct() {
-        Assert.assertEquals(vectorOperation.calculateVectorCrossProduct(firstDirectingVector, secondDirectingVector), 0.0);
+        Assert.assertEquals(vectorOperation.calculateVectorCrossProduct(firstDirectingVector, secondDirectingVector), 0.0, 0.000001);
     }
 
     @Test(groups = "CrossProduct")
     public void secondTestCalculateVectorCrossProduct() {
-        Assert.assertEquals(vectorOperation.calculateVectorCrossProduct(firstDirectingVector, thirdDirectingVector), -3.1);
+        Assert.assertEquals(vectorOperation.calculateVectorCrossProduct(firstDirectingVector, thirdDirectingVector), -3.1, 0.000001);
     }
 
     @Test(groups = "CrossProduct")

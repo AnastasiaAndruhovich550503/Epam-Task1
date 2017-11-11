@@ -26,7 +26,7 @@ public class ReadFileDataTest {
     public void intialization() {
         readFileData = new ReadFileData();
         locale = new Locale("en", "en");
-        filename = "src\\by\\andruhovich\\test\\dataTest.txt";
+        filename = "dataTest.txt";
 
         FileWriter fileWriter = null;
         File file = new File(filename);

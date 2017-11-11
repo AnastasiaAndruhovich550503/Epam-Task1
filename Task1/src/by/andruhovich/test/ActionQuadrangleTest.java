@@ -67,32 +67,32 @@ public class ActionQuadrangleTest {
 
     @Test(groups = "firstTest")
     public void firstTestCalculateSides() {
-        Assert.assertEquals(actionQuadrangle.calculateSides(quadrangle), expectedQuadrangleSides);
+        Assert.assertEquals(actionQuadrangle.calculateSides(quadrangle)[0], expectedQuadrangleSides[0], 0.00001);
     }
 
     @Test(groups = "secondTest")
     public void secondTestCalculateSides() {
-        Assert.assertEquals(actionQuadrangle.calculateSides(quadrangle)[2], expectedQuadrangleSides[2]);
+        Assert.assertEquals(actionQuadrangle.calculateSides(quadrangle)[2], expectedQuadrangleSides[2], 0.000001);
     }
 
     @Test(groups = "firstTest")
     public void firstTestCalculatePerimeter() {
-        Assert.assertEquals(actionQuadrangle.calculatePerimeter(quadrangle), expectedQuadranglePerimeter);
+        Assert.assertEquals(actionQuadrangle.calculatePerimeter(quadrangle), expectedQuadranglePerimeter, 0.000001);
     }
 
     @Test(groups = "secondTest")
     public void secondTestCalculatePerimeter() {
-        Assert.assertEquals(actionQuadrangle.calculatePerimeter(quadrangle), expectedQuadranglePerimeter);
+        Assert.assertEquals(actionQuadrangle.calculatePerimeter(quadrangle), expectedQuadranglePerimeter, 0.000001);
     }
 
     @Test(groups = "firstTest")
     public void firstTestCalculateSquare() {
-        Assert.assertEquals(actionQuadrangle.calculateSquare(quadrangle), expectedQuadrangleSquare);
+        Assert.assertEquals(actionQuadrangle.calculateSquare(quadrangle), expectedQuadrangleSquare, 0.000001);
     }
 
     @Test(groups = "secondTest")
     public void secondTestCalculateSquare() {
-        Assert.assertEquals(actionQuadrangle.calculateSquare(quadrangle), expectedQuadrangleSquare);
+        Assert.assertEquals(actionQuadrangle.calculateSquare(quadrangle), expectedQuadrangleSquare, 0.000001);
     }
 
     @Test (expectedExceptions = IllegalArgumentException.class)

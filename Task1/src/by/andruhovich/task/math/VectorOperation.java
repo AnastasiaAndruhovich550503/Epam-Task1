@@ -2,8 +2,6 @@ package by.andruhovich.task.math;
 
 import by.andruhovich.task.entity.Point;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 
 public class VectorOperation {
@@ -13,10 +11,8 @@ public class VectorOperation {
         }
 
         double[] vector = new double[2];
-        vector[0] =  new BigDecimal(secondPoint.getX() - firstPoint.getX()).setScale(9,
-                RoundingMode.HALF_UP).doubleValue();
-        vector[1] =  new BigDecimal(secondPoint.getY() - firstPoint.getY()).setScale(9,
-                RoundingMode.HALF_UP).doubleValue();
+        vector[0] =  secondPoint.getX() - firstPoint.getX();
+        vector[1] =  secondPoint.getY() - firstPoint.getY();
 
         return vector;
     }
@@ -41,8 +37,7 @@ public class VectorOperation {
         if (firstVector == null || secondVector == null) {
             throw new IllegalArgumentException();
         }
-        return new BigDecimal(firstVector[0] * secondVector[1] - firstVector[1] * secondVector[0]).setScale(9,
-                RoundingMode.HALF_UP).doubleValue();
+        return firstVector[0] * secondVector[1] - firstVector[1] * secondVector[0];
     }
 
     public double[] calculateListVectorCrossProduct(ArrayList<double[]> vectorList) {
